@@ -8,28 +8,6 @@ public class ReadFileAppProp {
     static String srcDir = "src/collections/";
     static String appProp = "application.properties";
 
-   /*public void readFile() {
-       FileInputStream inputStream = null;
-       try {
-           File file = new File(srcDir, appProp);
-           inputStream = new FileInputStream(file);
-           // используем inputStream для чтения файла
-           inputStream.read();
-       } catch (FileNotFoundException e) {
-           System.err.println("Ошибка! Файл не найден!");
-       } catch (IOException e) {
-           System.out.println("Ошибка ввода-вывода " + e.getMessage());
-       } finally {
-           if (inputStream != null) {
-               try {
-                   inputStream.close();
-               } catch (IOException e) {
-                   System.err.println("Ошибка закрытия потока чтения файла ...");
-               }
-           }
-       }
-   }*/
-
     // обращение к файлу application.properties
     public String readProperties() {
         //типа Hashtable для удобной работы с данными
